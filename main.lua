@@ -28,6 +28,7 @@ Citizen.CreateThread(function()
         local ped = PlayerPedId()
         local playerPed = GetPlayerPed(-1)
         local pedVeh = GetVehiclePedIsIn(playerPed, false)
+        local vehicle   = GetVehiclePedIsUsing(playerPed) --new added
         local menu = IsPauseMenuActive()
         local speed = GetEntitySpeed(pedVeh)
         local damage = GetVehicleEngineHealth(pedVeh)
